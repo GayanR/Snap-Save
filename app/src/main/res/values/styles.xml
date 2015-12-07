@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
+
+    </style>
+
+    <style name="ActionBarTheme" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/text_colors</item>
+    </style>
+
+
+    <style name="Theme.SplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splashscreen4</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MooTheme" parent="AppTheme">
+        <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+        <item name="android:radioButtonStyle">@style/MooSpinnerItem</item>
+    </style>
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+        <item name="colorControlActivated">@color/text_colors</item>
+        <item name="colorControlNormal">@color/ui_cyan</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/text_colors</item>
+    </style>
+
+
+    <style name="CustomShowcaseTheme2" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#663d4353</item>
+        <item name="sv_showcaseColor">@color/text_colors</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+    </style>
+
+
+    <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/ui_cyan</item>
+    </style>
+
+
+
+
+
+</resources>

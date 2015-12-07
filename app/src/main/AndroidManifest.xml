@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nuwan.nbqsafirstround" >
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat"
+        tools:replace="android:icon" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SmartScanActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MooTheme" >
+        </activity>
+        <activity
+            android:name=".CropBillActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ProcessedImageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".StaticFilteredResultActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DebuggingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NonStaticFilteredResultActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ManualBillEntryActivity"
+            android:label="@string/title_activity_manual_bill_entry"
+            android:theme="@style/MooTheme" >
+        </activity>
+        <activity
+            android:name=".DynamicProductRowGenerationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SelectBillEntryMethod"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NoNameNonStaticFilteredResultActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".BarChartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MooTheme" >
+        </activity>
+        <activity
+            android:name=".SelectStatisticsEntryMethod"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PieChartActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CommonFilteredResultActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".UnwantedExpQuestionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MooTheme" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

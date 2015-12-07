@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_colors"
+        android:text="Cropped Result"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTitle"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvTitle"
+        android:id="@+id/verticalLinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+            <!--<com.gc.materialdesign.views.ButtonFlat-->
+                <!--android:id="@+id/btnImageProc"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/text_colors"-->
+                <!--android:text="Process Image"-->
+                <!--android:onClick="imageProcess"-->
+                <!--android:layout_gravity="left"/>-->
+
+
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btnDirectSmartScan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/text_colors"
+                android:text="Smart Scan"
+                android:onClick="smartScan" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/text_colors"
+                android:text="Cancel"
+                android:onClick="cancel"
+                android:layout_gravity="right"/>
+
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:id="@+id/image_crop"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+
+                />
+
+            <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+                android:id="@+id/progressBarCircularIndeterminate"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/text_colors"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+
+
+
+
+        <!--android:background="@drawable/imageviewborder"-->
+        <!--android:background="@drawable/imageviewborder"-->
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

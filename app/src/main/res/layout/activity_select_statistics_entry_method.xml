@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ebm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nuwan.nbqsafirstround.SelectStatisticsEntryMethod"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_colors"
+        android:text="Unwanted\nExpenses"
+        android:id="@+id/tvRB"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBtnRB"
+        android:layout_below="@+id/tvRB"
+        android:src="@drawable/recyclebin"
+        android:onClick="unwantedexp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediction"
+        android:textColor="@color/text_colors"
+        android:layout_below="@+id/imgBtnRB"
+        android:id="@+id/tvTAG"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTAG"
+        android:id="@+id/imgBtnTag"
+        android:src="@drawable/tag"
+        android:onClick="prediction"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Generate\n   Report"
+        android:textColor="@color/text_colors"
+        android:layout_below="@+id/imgBtnTag"
+        android:id="@+id/tvRep"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRep"
+        android:id="@+id/imgBtnRep"
+        android:src="@drawable/report"
+        android:onClick="generateReport"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Email\n   Report"
+        android:textColor="@color/text_colors"
+        android:layout_below="@+id/imgBtnRep"
+        android:id="@+id/tvEmail"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:id="@+id/imgBtnEmail"
+        android:src="@drawable/email"
+        android:onClick="sendEmail"/>
+
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="120dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="For Prediction to work,\nYou should shop for at least 2 months !!!!"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@color/text_colors"-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/prediction_textview"/>-->
+
+    <lt.lemonlabs.android.expandablebuttonmenu.ExpandableMenuOverlay
+        android:id="@+id/button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/statistics"
+        ebm:dimAmount="0.8"
+        ebm:mainButtonSize="0.25"
+        ebm:otherButtonSize="0.22"
+        ebm:distanceY="0.30"
+        ebm:distanceX="0.28"
+        ebm:bottomPad="0.03"
+        ebm:closeButtonSrc="@drawable/exit"
+        ebm:leftButtonSrc="@drawable/barchart"
+        ebm:midButtonSrc="@drawable/calendar"
+        ebm:rightButtonSrc="@drawable/piechart"
+        ebm:leftButtonText="@string/action_left_3"
+        ebm:midButtonText="@string/action_mid_3"
+        ebm:rightButtonText="@string/action_right_3"
+        />
+
+</RelativeLayout>
